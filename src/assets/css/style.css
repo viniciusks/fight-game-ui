@@ -1,0 +1,46 @@
+.dp-block {
+    display: inline-block;
+}
+
+/* Tamanho form */
+.form-login {
+    width: 300px;
+}
+
+/* Tamanho buttons */
+.btn-login {
+    width: 300px;
+}
+
+/* Margins */
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.auto-marg {
+    margin: 0 auto;
+}
+
+.vert-marg10 {
+    margin: 10px 0;
+}
+
+.vert-marg20 {
+    margin: 20px 0;
+}
