@@ -3,12 +3,15 @@ div
     h1 {{ msg }}
     div(class="mt-30 container")
         div(class="row")
-            form(class="auto-marg form-login")
+            form(class="auto-marg form-login card")
                 h2 Login
                 div(class="form-group")
-                    input(type="text" class="form-control" aria-describedby="emailHelp" placeholder="Email")
+                    input(type="text" v-model="login" class="form-control" aria-describedby="emailHelp" placeholder="Email")
                 div(class="form-group")
-                    input(type="password" class="form-control" placeholder="Password")
+                    input(type="password" v-model="pass" class="form-control" placeholder="Password")
                 button(type="submit" class="btn btn-primary btn-login mb-30") Sign in
-                a(href="/#/") Esqueceu sua senha?
-
+                a(href="/#/" class="dp-block") Esqueceu sua senha?
+                a(href="/#/" class="dp-block") Ainda não é um lutador? Cadastre-se agora!
+        div(class="row mt-20")
+            div(class="auto-marg")
+                span Aqui entra os alertas de erro de login ou usuário não cadastro

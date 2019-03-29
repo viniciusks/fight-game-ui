@@ -5,7 +5,9 @@ export default {
     name: 'Login',
     data() {
         return {
-            msg: 'Welcome to the Fight Game!'
+            msg: 'Welcome to the Fight Game!',
+            login: '',
+            pass: ''
         }
     }
 }

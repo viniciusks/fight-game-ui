@@ -1,15 +1,30 @@
-.dp-block {
+.dp-inline-block {
     display: inline-block;
+}
+
+.dp-block {
+    display: block;
+}
+
+form.card {
+    padding: 20px;
+    /* 
+        Box-shadow é para deixar sombreado os elementos.
+        O primeiro pixel é a horizontal.
+        O segundo pixel é a vertical.
+        O terceiro pixel é onde a sombra fica no elemento.
+    */
+    box-shadow: 5px 5px 16px rgba(0,0,0,0.5);
 }
 
 /* Tamanho form */
 .form-login {
-    width: 300px;
+    width: 350px;
 }
 
 /* Tamanho buttons */
 .btn-login {
-    width: 300px;
+    width: 100%;
 }
 
 /* Margins */
@@ -43,4 +58,9 @@
 
 .vert-marg20 {
     margin: 20px 0;
+}
+
+/* Textos */
+.center {
+    text-align: center;
 }
