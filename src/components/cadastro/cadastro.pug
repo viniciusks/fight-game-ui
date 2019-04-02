@@ -1,0 +1,24 @@
+div
+    h1 Cadastro de usuário
+    div(class="container mt-30")
+        div(class="row")
+            form(class="auto-marg form-cadastro card")
+                div(class="form-group row mt-10")
+                    label(class="col-sm-3 col-form-label") Nome
+                    div(class="col-sm-9")    
+                        input(type="text" v-model="nome" class="form-control" placeholder="Nome completo")
+                div(class="form-group row mt-10")
+                    label(class="col-sm-3 col-form-label") Login
+                    div(class="col-sm-9")    
+                        input(type="text" v-model="login" class="form-control" placeholder="Login")
+                div(class="form-group row mt-10")
+                    label(class="col-sm-3 col-form-label") Email
+                    div(class="col-sm-9")    
+                        input(type="email" v-model="email" class="form-control" placeholder="Email")
+                div(class="form-group row mt-10")
+                    label(class="col-sm-3 col-form-label") Senha
+                    div(class="col-sm-9")    
+                        input(type="password" v-model="senha" class="form-control" placeholder="Senha")
+                button(class="btn btn-primary btn-submit mt-10") Cadastrar
+                a(href="/#/" class="mt-20") Já possui conta? Só acessar, vamos lutar!
+                                

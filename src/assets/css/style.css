@@ -22,8 +22,12 @@ form.card {
     width: 350px;
 }
 
+.form-cadastro {
+    width: 400px;
+}
+
 /* Tamanho buttons */
-.btn-login {
+.btn-submit {
     width: 100%;
 }
 
