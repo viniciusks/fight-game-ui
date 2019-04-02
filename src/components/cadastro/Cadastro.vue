@@ -19,8 +19,8 @@ export default {
                 email: this.email,
                 senha: this.senha
             }
-
-            this.$store.dispatch("cadastro/add_usuario_act", items)
+            
+            this.$store.dispatch("add_usuario_act", items)
         }
     },
     computed: {
