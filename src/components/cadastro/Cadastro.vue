@@ -10,6 +10,23 @@ export default {
             email: '',
             senha: ''
         }
+    },
+    methods: {
+        cadastrar() {
+            var items = {
+                nome: this.nome,
+                login: this.login,
+                email: this.email,
+                senha: this.senha
+            }
+
+            this.$store.dispatch("cadastro/add_usuario_act", items)
+        }
+    },
+    computed: {
+        model() {
+            return this.$store.state.cadastro.model
+        }
     }
 }
 </script>

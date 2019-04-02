@@ -19,6 +19,6 @@ div
                     label(class="col-sm-3 col-form-label") Senha
                     div(class="col-sm-9")    
                         input(type="password" v-model="senha" class="form-control" placeholder="Senha")
-                button(class="btn btn-primary btn-submit mt-10") Cadastrar
+                button(v-on:click="cadastrar()" class="btn btn-primary btn-submit mt-10") Cadastrar
                 a(href="/#/" class="mt-20") Já possui conta? Só acessar, vamos lutar!
                                 
