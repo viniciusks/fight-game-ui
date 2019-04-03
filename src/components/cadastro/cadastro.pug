@@ -19,6 +19,12 @@ div
                     label(class="col-sm-3 col-form-label") Senha
                     div(class="col-sm-9")    
                         input(type="password" v-model="senha" class="form-control" placeholder="Senha")
-                button(v-on:click="cadastrar()" class="btn btn-primary btn-submit mt-10") Cadastrar
+                        input(type="password" v-model="conf_senha" class="form-control mt-20" placeholder="Confirmar senha")
+                button(type="button" v-on:click="cadastrar()" class="btn btn-primary btn-submit mt-10") Cadastrar
                 a(href="/#/" class="mt-20") Já possui conta? Só acessar, vamos lutar!
+        div(class="row")
+            div(class="auto-marg")
+                div(v-if="erro_cadastro == 'campos_vazios'" class="mt-40 alert alert-danger" role="alert") Preencha todos os campos!
+                div(v-if="erro_cadastro == 'senhas_diferentes'" class="mt-40 alert alert-danger" role="alert") Senhas diferentes!
+                div(v-if="sucesso_cadastro == true" class="mt-40 alert alert-success" role="alert") Cadastro realizado com sucesso!
                                 

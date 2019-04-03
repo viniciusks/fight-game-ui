@@ -1,6 +1,7 @@
 <template src="./cadastro.pug" lang="pug"></template>
 
 <script>
+import { setInterval, setTimeout } from 'timers';
 export default {
     name: "Cadastro",
     data() {
@@ -8,19 +9,33 @@ export default {
             nome: '',
             login: '',
             email: '',
-            senha: ''
+            senha: '',
+            conf_senha: '',
+            erro_cadastro: '',
+            sucesso_cadastro: false
         }
     },
     methods: {
         cadastrar() {
-            var items = {
-                nome: this.nome,
-                login: this.login,
-                email: this.email,
-                senha: this.senha
+            if(this.nome == '' || this.login == '' || this.email == '' ||
+                this.senha == '' || this.conf_senha == ''){
+                    this.erro_cadastro = 'campos_vazios'
             }
-            
-            this.$store.dispatch("add_usuario_act", items)
+            else {
+                if(this.senha == this.conf_senha) {
+                    var items = {
+                        nome: this.nome,
+                        login: this.login,
+                        email: this.email,
+                        senha: this.senha
+                    }
+                    this.sucesso_cadastro = true
+
+                    setTimeout(this.$store.dispatch("add_usuario_act", items), 1000)
+                } else{
+                    this.erro_cadastro = 'senhas_diferentes'
+                }
+            }
         }
     },
     computed: {

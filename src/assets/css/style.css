@@ -110,3 +110,7 @@ img.perfil {
 .text-left {
     text-align: left;
 }
+
+.alert{
+    width: 500px;
+}
