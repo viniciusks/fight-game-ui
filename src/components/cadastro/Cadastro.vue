@@ -29,9 +29,14 @@ export default {
                         email: this.email,
                         senha: this.senha
                     }
+                    this.erro_cadastro = ''
                     this.sucesso_cadastro = true
 
-                    setTimeout(this.$store.dispatch("add_usuario_act", items), 1000)
+                    setTimeout(() => {
+                        this.$store.dispatch("add_usuario_act", items)
+                        this.$router.push("/")
+                    }, 1000)
+
                 } else{
                     this.erro_cadastro = 'senhas_diferentes'
                 }
