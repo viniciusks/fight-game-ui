@@ -20,8 +20,7 @@ export default {
             if(this.nome == '' || this.login == '' || this.email == '' ||
                 this.senha == '' || this.conf_senha == ''){
                     this.erro_cadastro = 'campos_vazios'
-            }
-            else {
+            } else {
                 if(this.senha == this.conf_senha) {
                     var items = {
                         nome: this.nome,
@@ -34,7 +33,6 @@ export default {
 
                     setTimeout(() => {
                         this.$store.dispatch("add_usuario_act", items)
-                        this.$router.push("/")
                     }, 1000)
 
                 } else{

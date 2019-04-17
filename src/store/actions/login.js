@@ -1,5 +1,6 @@
 export default {
-    login: function(state, data) {
-        state.commit("logar", data)
+    login_act: function(state, data) {
+        console.log(data)
+        state.commit("login_mut", data)
     }
 }
