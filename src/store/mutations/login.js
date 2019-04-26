@@ -1,6 +1,7 @@
 import axios from 'axios'
 
 export default {
+    // Teste
     login_mut(state, data) {
         state.login = data.login
         state.senha = data.senha
